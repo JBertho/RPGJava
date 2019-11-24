@@ -1,8 +1,10 @@
 package fr.esgi.rpg.core;
 
 import java.util.Objects;
+import fr.esgi.rpg.core.Entity;
+import fr.esgi.rpg.core.Faction;
 
-public abstract class Character extends Entity{
+public abstract class Character extends Entity {
     private Faction faction;
 
 
@@ -68,6 +70,10 @@ public abstract class Character extends Entity{
 
     public boolean sameFaction(Character character){
         return this.faction == character.getFaction() && this.faction != null;
+    }
+
+    public boolean sameAlliance(){
+
     }
 
     @Override
